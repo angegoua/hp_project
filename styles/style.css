@@ -1,0 +1,487 @@
+@font-face{
+    font-family: 'HP Simplified';
+    src: url('../fonts/HPSimplified-Regular.ttf') ;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url('../assets/fond.png');
+    background-size: cover;
+    font-family: 'HP Simplified';
+}
+
+
+/**********************
+        HEADER
+**********************/
+
+.header__container .header__container__logo{
+    width: 20%;
+    height: auto;
+    margin: 5px 50px;
+}
+
+.header__container .header__container__right-images{
+    position: absolute;
+    right: 0;
+    width: 25%;
+}
+
+.header__container__right-images-blue{
+    position: absolute;
+    right: 23%;
+    width: 13%;
+}
+
+.header__container__right-images-mobile
+{
+    display: none;
+}
+
+
+.header__container__left-images-mobile{
+    display: none;
+}
+/**********************
+        MAIN
+**********************/
+
+
+
+.main__container__left-images
+{
+    position: absolute;
+    left: 0;
+    width: 30%;
+}
+.main__container .main__container__how-to
+{
+    margin: 0 auto;
+    width: 30%;
+    text-align: center;
+}
+
+.main__container .main__container__how-to h1
+{
+    width: 90%;
+    font-family: 'HP Simplified';
+    margin: 0 auto;
+    color: #339dd2;
+}
+
+.main__container__how-to__cards__card
+{
+    position: relative;
+    padding: 10px;
+    margin: 40px auto;
+    width: 60%;
+    text-align: center;
+    background: white;
+    box-shadow: 5px 5px lightgray;    
+}
+
+
+.main__container__how-to__cards__card__text strong
+{
+    color: #339dd2 ;
+}
+.main__container__how-to__cards__card__number-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #339dd2;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: calc(50% - 10px);
+    top: -15px;
+}
+
+.main__container__how-to__cards__card__number-box p
+{
+    color: white;
+    margin: 0;
+}
+
+.main__container__how-to__container-link
+{
+    margin: 70px auto;
+    text-align: center;
+}
+
+.main__container__how-to__container-link a 
+{
+    text-decoration: none;
+    color: white;
+    background: #a2c166;
+    padding: 15px 20px;
+    transition: all 0.5s ease;
+}
+
+.main__container__how-to__container-link a:hover{
+    background: #7c924f;
+
+}
+
+.separation{
+    margin: 50px auto;
+    text-align: center;
+    width: 30%;
+    height: auto;
+}
+
+.separation img{
+    width: 30%;
+}
+
+
+
+.games{
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.games .games__title{
+    margin: 0 auto;
+    width: 30%;
+    text-align: center;
+    color: #339dd2;
+}
+
+.games .games__slider{
+    width: 100%;
+    /* height: 600px; */
+    margin: 20px auto;
+    /* position: relative; */
+    overflow: hidden;
+}
+
+.games .slider__slider-container
+{
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-between;
+    transition: ease-in 0.5s all;
+    will-change: left;
+    margin-bottom: 20px;
+}
+
+.slider__slider-container__block
+{
+    background: white;
+    width: 263.84px;
+    margin: 20px;
+    box-shadow: 5px 5px #339dd2;
+    text-align: center;
+    height: 550px;
+
+}
+
+.slider__slider-container__block h4{
+    margin: 5px;
+}
+
+.slider__slider-container__block img{
+    width: 90%;
+}
+
+.slider__slider-container__block h2{
+    font-size: 18px;
+    margin: 10px;
+}
+
+.slider__slider-container__block p{
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+
+.left-arrow
+{
+    position: absolute;
+    left: -5%;
+    top: 40%;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.left-arrow:hover{
+    filter: brightness(0.7);
+}
+.right-arrow
+{
+    transform: rotate(180deg);
+    position: absolute;
+    right: -5%;
+    top: 40%;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.right-arrow:hover{
+    filter: brightness(0.7);
+}
+
+.right_green_block{
+    bottom: calc(30% - 252.35px / 2); /*Minus the half of the height of the element */
+    right: -12.5%;
+    width: 8%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+}
+
+.right_cube{
+    position: absolute;
+    top: 10%;
+    right: -5%;
+    width: 10%;
+}
+
+
+.down_left_mouse{
+    top: 75%;
+    left: -10%;
+    width: 8%;
+    height: auto;
+    position: absolute;
+}
+
+.left-image-blue
+{
+
+    width: 12%;
+    position: absolute;
+    top: 65%;
+    left: -15%;
+}
+
+.plus_symbol_down{
+    width: 5%;
+    position: absolute;
+    top: 90%;
+    left: -10%;
+}
+
+p.before-footer{
+    text-align: center;
+    font-size: 10px;
+    margin: 0;
+}
+
+
+footer{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: lightgray;
+    height: 50px;
+}
+
+footer a, footer span{
+    color: white;
+    text-decoration: none;
+    transition: color ease 0.5s;
+}
+
+footer a:hover{
+    /* opacity: 0.7; */
+    color: darkgray;
+}
+
+
+
+
+
+/****************
+    CARROUSSEL
+**************/
+
+.carousel{
+    overflow: hidden;
+    position: relative;
+}
+.carousel__container::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+.carousel__container{
+    transform: translate3d(0,0,0 );
+    transition: transform 0.3s;
+}
+.carousel__item{
+    float: left;
+}
+
+
+
+
+/* CODE INPUT */
+
+.isHidden{
+    display: none !important;
+}
+
+#informations{
+    text-align: center;
+}
+
+.code-input{
+    outline: none;
+    margin: 25px 10px;
+    text-align: center;
+    width: 20%;
+    height: 35px;
+    border-radius: 5px;
+    border: solid 2px #e6e6e6;
+    padding: 10px 10px 1px 10px;
+    text-transform: uppercase;
+    font-family: 'HP Simplified';
+    font-size: 24px;
+}
+
+
+.code-input::-webkit-input-placeholder{
+    color: #e6e6e6;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.code-input:focus{
+    border: solid 2px #c7c7c7
+    
+}
+
+.question-tag{
+    width: 30px;
+    cursor: pointer;
+}
+
+
+
+.warning {
+    text-align: center;
+}
+
+.warning img{
+    width: 30px;
+}
+
+.warning p{
+    margin-top: 0;
+    color: #ff0000;
+}
+
+
+
+.client-info input{
+    outline: none;
+    width: 15%;
+    height: 20px;
+    border-radius: 5px;
+    border: solid 2px #e6e6e6;
+    padding: 10px;
+    font-family: 'HP Simplified';
+    margin: 10px;
+}
+
+
+
+
+.client-info input:focus{
+    border: solid 2px #c7c7c7
+    
+}
+
+
+.submit{
+    margin: 30px;
+    padding: 10px 40px;
+    color: white;
+    background: #a2c166;
+    font-family: 'HP Simplified';
+    border-style: none;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.submit:hover{
+    background-color: #7c924f;
+}
+
+
+/* POP UP MODAL  */
+
+.bg-modal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.705);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content{
+    width: 50%;
+    height: 50%;
+    background: white;
+    border: 15px solid #94c578;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.modal-content .instructions{
+    width: 30%;
+    margin-left: 50px;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content .instructions h1{
+    color: #339dd2;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.modal-content .instructions p{
+    font-size: 14px;
+}
+
+.modal-content img{
+    position: absolute;
+    width: 75%;
+    right: 25px;
+    margin-top: 10px;
+}
+
+.close{
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    color: #94c578;
+    cursor: pointer;
+}
+
+.close:after
+{
+    content: url('../assets/cross.png');
+}

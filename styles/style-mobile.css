@@ -1,0 +1,153 @@
+@media screen and (max-width: 700px) {
+
+
+    .header__container {
+        text-align: center;
+        width: 100%;
+    }
+
+    .header__container .header__container__logo {
+        width: 45%;
+    }
+
+    .main__container__left-images {
+        display: none;
+    }
+
+    .header__container .header__container__right-images {
+        display: none;
+    }
+
+    .header__container__right-images-blue {
+        display: none;
+    }
+
+    .header__container__right-images-mobile {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 22.5%;
+    }
+
+    .header__container__left-images-mobile {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 22.5%;
+    }
+
+
+    .main__container {
+        overflow: hidden;
+    }
+
+    .main__container .main__container__how-to {
+        margin: 0 auto;
+        width: 90%;
+        text-align: center;
+    }
+
+    .main__container .main__container__how-to h1 {
+        width: 65%;
+        font-size: 24px;
+
+    }
+
+    .main__container__how-to__cards__card {
+        width: 80%;
+    }
+
+    .main__container__how-to__container-link {
+        margin: 50px auto;
+    }
+
+    .separation {
+        margin: 20px auto;
+    }
+
+    .separation img {
+        width: 100%;
+    }
+
+    .games .games__title {
+        width: 90%;
+        font-size: 24px;
+    }
+
+    .games .games__slider {
+        height: 510px;
+    }
+
+    .slider__slider-container__block {
+        margin: 20px auto;
+        width: 65%;
+        height: 480px;
+
+
+    }
+
+    .right_green_block {
+        width: 25%;
+        bottom: calc(10% - 252.35px / 2);
+        right: -20%;
+        overflow: hidden;
+    }
+
+    .left-arrow {
+        top: 50%;
+    }
+
+    .right-arrow {
+        top: 50%;
+    }
+
+    .left-image-blue {
+        width: 30%;
+        left: -23%;
+        top: -8%;
+    }
+
+    .down_left_mouse {
+        width: 30%;
+        top: 0;
+        left: -12.5%;
+    }
+
+    .right_cube {
+        width: 28%;
+        right: -10%;
+        top: -5%;
+    }
+
+    .plus_symbol_down {
+        width: 15%;
+        top: 25%;
+        left: -5%;
+    }
+
+    p.before-footer {
+        margin: 10px auto;
+        width: 95%;
+    }
+
+
+    .code-input {
+        width: 70%;
+    }
+
+    .client-info__identity__input {
+        display: block;
+
+    }
+
+    .client-info__email__input {
+        display: block;
+    }
+
+    .client-info input {
+        width: 70%;
+        margin: 10px auto;
+    }
+}

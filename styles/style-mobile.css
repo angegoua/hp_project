@@ -221,8 +221,11 @@
 
 
 .confirm{
-width: 90%;
-overflow: hidden;
+width: 85%;
+}
+
+.confirm p{
+    width: 90%
 }
 
 

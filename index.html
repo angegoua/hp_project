@@ -25,7 +25,8 @@
         <div class="main__container">
             <div class="main__container__how-to">
                 <img class="main__container__left-images" src="assets/left-images.png" alt="HP">
-                <!-- <img class="main__container__computer-images" src="assets/computer_mouse.png" alt="HP Computer"> -->
+                <img class="main__container__computer-images" src="assets/computer_mouse.png" alt="HP Computer">
+                <img class="main__container__left-images-mobile" src="assets/left-images-mobile.png" alt="HP User">
                 <h1 class="main__main__container__how-to__title">COMMENT OBTENIR MES 14 JEUX VIDÉO SUR STEAM<span
                         class="exponent">®</span> ?</h1>
                 <div class="main__container__how-to__cards">
@@ -205,37 +206,41 @@
 
                 <div>
                     <img class="left-image-blue toFix" src="assets/top_blue.png" alt="">
-                    <img class="down_left_mouse toFix" src="/assets/down_left_mouse.png" alt="">
-                    <img class="plus_symbol_down toFix" src="/assets/plus_symbol_down.png" alt="">
+                    <img class="down_left_mouse toFix" src="assets/down_left_mouse.png" alt="">
+                    <img class="plus_symbol_down toFix" src="assets/plus_symbol_down.png" alt="">
                 </div>
 
-                <img class="right_cube" src="/assets/right_cube.png" alt="">
-                <img class="right_green_block" src="/assets/right_down_bloc.png" alt="">
+                <img class="right_cube" src="assets/right_cube.png" alt="">
+                <img class="right_green_block toFix" src="assets/right_down_bloc.png" alt="">
 
 
                 <div id="informations" class="isHidden">
                     <form action="">
                         <div class="code-input-container">
-                            <img class="question-tag" src="/assets/question-tag.png" alt="Learn More">
-                            <input type="text" placeholder="——————————" class="code-input">
+                            <img class="question-tag" src="assets/question-tag.png" alt="Learn More">
+                            <input type="text" placeholder="——————————" class="code-input"><span class="check-code-value"></span>
                         </div>
                         <div class="warning">
-                            <img src="/assets/warning.png" alt="">
-                            <p>Une fois le code utilisé, vous ne pourrez plus revenir en arrière.</p>
+                            <img src="assets/warning.png" alt="">
+                            <p class="warning__default-text">Une fois le code utilisé, vous ne pourrez plus revenir en arrière.</p>
+                            <p class="warning__unknown-value-text">Code inconnu</p>
                         </div>
                         <div class="client-info">
                             <div class="client-info__identity">
                                 <input class="client-info__identity__input" type="text" id="name" name="nom"
-                                    placeholder="Nom">
+                                    placeholder="Nom"><span class="check-client-value check-name"></span>
                                 <input class="client-info__identity__input" type="text" id="first-name" name="prenom"
-                                    placeholder="Prénom">
+                                    placeholder="Prénom"><span class="check-client-value check-firstname"></span>
                             </div>
                             <div class="client-info__email">
                                 <input class="client-info__email__input" type="email" id="email" name="email"
-                                    placeholder="Adresse email">
+                                    placeholder="Adresse email"><span class="check-client-value check-email"></span>
                                 <input class="client-info__email__input" id="email" name="email"
-                                    placeholder="Confirmez votre email">
+                                    placeholder="Confirmez votre email"><span class="check-client-value check-confirm-email"></span>
                             </div>
+                        </div>
+                        <div class="warning">
+                            <p class="incorrect-format">Format incorrect</p>
                         </div>
                         <input class="submit" type="submit" value="VALIDEZ">
                     </form>
@@ -261,7 +266,15 @@
                     <h1 class="title">ENTREZ LE CODE INSCRIT SUR VOTRE LEAFLET</h1>
                     <p>VEUILLEZ À RESPECTER<br>SON FORMAT «CODE-XXXXX»<br>POUR VALIDER VOTRE DEMANDE</p>
                 </div>
-                <img src="assets/popup_image.png" alt="">
+                <img class="pop_up_image" src="assets/popup_image.png" alt="">
+                <div class="close">FERMER </div>
+            </div>
+        </div>
+        <div class="bg-modal-mobile">
+            <div class="modal-content">
+                <h1 class="title-mobile">ENTREZ LE CODE INSCRIT SUR VOTRE LEAFLET</h1>
+                <img class="pop_up_image_mobile" src="assets/popup_image_mobile.png" alt="">                
+                <p class="text-mobile">VEUILLEZ À RESPECTER<br>SON FORMAT «CODE-XXXXX»<br>POUR VALIDER VOTRE DEMANDE</p>
                 <div class="close">FERMER </div>
             </div>
         </div>
@@ -271,7 +284,7 @@
         <a href=""> CGV </a><span> - </span>
         <a href=""> CONTACT</a>
     </footer>
-    <script src="/scripts/carroussel.js"></script>
+    <script src="scripts/carroussel.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 

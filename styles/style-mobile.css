@@ -43,6 +43,27 @@
         overflow: hidden;
     }
 
+
+    .main__container__left-images-mobile {
+        display: block;
+        position: absolute;
+        width: 25%;
+        left: 0;
+        top: 350px;
+        z-index: 2;
+    }
+
+    .main__container__computer-images {
+        width: 150px;
+        top: 340px;
+        right: 0;
+
+    }
+
+    .main__container__how-to__cards__card.card-2 {
+        z-index: -2;
+    }
+
     .main__container .main__container__how-to {
         margin: 0 auto;
         width: 90%;
@@ -56,7 +77,11 @@
     }
 
     .main__container__how-to__cards__card {
-        width: 80%;
+        width: 282px;
+    }
+
+    .main__container__how-to__cards__card.main__container__how-to__cards__card.card-2 {
+        z-index: 3;
     }
 
     .main__container__how-to__container-link {
@@ -82,7 +107,7 @@
 
     .slider__slider-container__block {
         margin: 20px auto;
-        width: 65%;
+        width: 195px;
         height: 480px;
 
 
@@ -110,9 +135,9 @@
     }
 
     .down_left_mouse {
-        width: 30%;
-        top: 0;
-        left: -12.5%;
+        width: 77.3px;
+        top: 20px;
+        left: -5%;
     }
 
     .right_cube {
@@ -132,9 +157,10 @@
         width: 95%;
     }
 
+    
 
     .code-input {
-        width: 70%;
+        width: 207px;
     }
 
     .client-info__identity__input {
@@ -147,7 +173,52 @@
     }
 
     .client-info input {
-        width: 70%;
-        margin: 10px auto;
+        display: inline-block;
+        width: 200px;
     }
+
+
+    .bg-modal-mobile {
+        display: none;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.705);
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .modal-content {
+        width: 90%;
+        display: block;
+        height: initial;
+    }
+
+    .modal-content h1.title-mobile {
+        color: #339dd2;
+        font-size: 24px;
+        width: 65%;
+        text-align: center;
+        margin: 30px auto 5px auto;
+    }
+
+    .modal-content .pop_up_image_mobile {
+        width: 306.35px;
+        height: auto;
+        position: relative;
+        left: calc(50% - 306.35px / 2 );
+    }
+    .modal-content .text-mobile{
+        text-align: center;
+    }
+}
+
+.confirm-container{
+    margin: 50px 10px;
 }

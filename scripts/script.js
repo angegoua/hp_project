@@ -8,7 +8,8 @@ const informations = document.querySelector('#informations')
 const questionTag = document.querySelector('.question-tag')
 const modal = document.querySelector('.bg-modal')
 const rightCube = document.querySelector('.right_cube')
-const closeModal = document.querySelector('.bg-modal .close')
+const closeModal = document.querySelectorAll('.close')
+const modalMobile = document.querySelector('.bg-modal-mobile')
 
 
 callToAction.addEventListener('click', function (e) {
@@ -20,7 +21,7 @@ callToAction.addEventListener('click', function (e) {
     leftArrow.style.display = 'none'
     rightArrow.style.display = 'none'
 
-    gamesTitle.innerHTML = 'ENTREZ LE CODE INSCRIT<br> SUR VOTRE LEAFLET'
+    gamesTitle.innerHTML = 'ENTREZ LE CODE INSCRIT SUR VOTRE LEAFLET'
     gamesTitle.style.width = '100%'
 
     if (window.matchMedia("(min-width: 701px)").matches) {
@@ -29,18 +30,34 @@ callToAction.addEventListener('click', function (e) {
             fixPos[0].style.top = '30%'
             fixPos[1].style.top = '40%'
             fixPos[2].style.top = '70%'
+            fixPos[3].style.bottom = '25%'
         }
-        rightCube.style.right = '25%'
-    } 
+    rightCube.style.right = '25%'
 
+    } 
 
     
 })
 
 questionTag.addEventListener('click', function () {
-    modal.style.display = 'flex'
+    // modal.style.display = 'none'
+    if (window.matchMedia("(min-width: 701px)").matches) {
+        modal.style.display = 'flex'
+    }else{
+        modalMobile.style.display = 'flex'
+    }
+    
 })
+for(i=0; i<closeModal.length; i++){
+    closeModal[i].addEventListener('click', function () {
+    
+        if (window.matchMedia("(min-width: 701px)").matches) {
+            modal.style.display = 'none'
+        }else{
+            modalMobile.style.display = 'none'
+    
+        }
 
-closeModal.addEventListener('click', function () {
-    modal.style.display = 'none'
-})
+  
+})  
+}

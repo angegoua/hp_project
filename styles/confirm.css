@@ -46,6 +46,11 @@ body{
     left: 0;
     width: 30%;
 }
+
+.main__container__left-images-mobile{
+    display: none;
+
+}
 .main__container .main__container__how-to
 {
     margin: 0 auto;

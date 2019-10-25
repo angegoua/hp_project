@@ -137,12 +137,12 @@
     .down_left_mouse {
         width: 77.3px;
         top: 20px;
-        left: -5%;
+        left: -10%;
     }
 
     .right_cube {
         width: 28%;
-        right: -10%;
+        right: -15px;
         top: -5%;
     }
 
@@ -218,6 +218,13 @@
         text-align: center;
     }
 }
+
+
+.confirm{
+width: 90%;
+overflow: hidden;
+}
+
 
 .confirm-container{
     margin: 50px 10px;
